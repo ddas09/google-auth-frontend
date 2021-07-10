@@ -1,0 +1,41 @@
+<div class="text-centered">
+    <div *ngIf="errorMsg" class="alert"><h3>{{errorMsg}}</h3></div>
+    
+    <div *ngIf="!isLoggedIn">
+        <div class="heading">
+            User authentication using oauth 2.0
+        </div>
+
+        <div class="google-button" (click)="onSignIn()">
+            <div class="button-icon">
+                <img src="assets/google-logo.png" alt="Google logo">
+            </div>
+            <div class="button-content">Sign in with google</div> 
+        </div>
+
+        <div class="separator">
+            <div class="seperator-text">OR</div>
+        </div>
+
+        <div class="google-button" (click)="onSignUp()">
+            <div class="button-icon">
+                <img src="assets/google-logo.png" alt="Google logo">
+            </div>
+            <div class="button-content">Sign up with google</div> 
+        </div>
+    </div>
+
+    <div *ngIf="isLoggedIn">
+        <div class="heading">
+            Hello User
+        </div>
+        <div class="profile-card">
+            <img class="profile-img" src="{{ user.photoUrl }}" alt="{{ user.firstName }}">
+            <div class="profile-name">{{ user.firstName }}&nbsp;{{ user.lastName }}</div>
+            <h3>ID: {{ user.id }}</h3>
+            <a class="profile-email" href="mailto:{{ user.email }}" target="_blank">{{ user.email }}</a>
+            <div class="logout-button" (click)="logoutUser(true)">Logout</div>
+        </div>
+    </div>
+</div>
+

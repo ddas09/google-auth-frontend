@@ -1,0 +1,96 @@
+.text-centered {
+    width: fit-content;
+    height: fit-content;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.heading {
+    text-align: center;
+    font-size: 1.6rem;
+    margin-bottom: 30px;
+}
+
+.google-button {
+    background-color: #3082ee;
+    display: flex;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+
+.google-button:hover {
+    box-shadow: 1px 1px 5px #3082ee;
+}
+
+.button-icon img {
+    width: 40px;
+    display: block;
+}
+
+.button-content {
+    color: #fff;
+    display: inline;
+    font-size: 20px;
+    padding: 10px 65px 0;
+}
+
+.separator {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.separator::before,
+.separator::after {
+  content: '';
+  flex: 1;
+  border-bottom: 1px solid rgba(var(--b38,219,219,219),1);
+}
+
+.seperator-text {
+    color: rgba(var(--f52,142,142,142),1);
+    padding: 0 20px;
+}
+
+.profile-card {
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px 40px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.profile-img {
+    width: 150px;
+    border-radius: 50%;
+}
+
+.profile-name {
+    font-size: 30px;
+    padding-top: 10px;
+}
+
+.profile-email {
+    text-decoration: none;
+    font-size: 18px;
+    color: #1a6ad3;
+}
+
+.logout-button {
+    background-color: red;
+    color: #fff;
+    margin-top: 20px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.alert h3 {
+    color: red;
+    text-align: center;
+    margin-bottom: 10px;
+}
