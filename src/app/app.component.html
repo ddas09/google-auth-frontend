@@ -1,5 +1,5 @@
 <div class="text-centered">
-    <div *ngIf="errorMsg" class="alert"><h3>{{errorMsg}}</h3></div>
+    <div *ngIf="errorMsg" class="alert"><h3>{{ errorCode }}: {{ errorMsg }}</h3></div>
     
     <div *ngIf="!isLoggedIn">
         <div class="heading">
